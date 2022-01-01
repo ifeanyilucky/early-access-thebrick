@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -64,14 +65,14 @@
     rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0)
   );
-  --bs-body-font-family: Pluto TV Sans V10;
+  --bs-body-font-family: Google Sans;
   --bs-body-font-size: 0.937rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: auto;
   --bs-body-color: #747579;
   --bs-body-bg: #fff;
 }
-
+@import url("./font.css");
 *,
 *::before,
 *::after {
@@ -124,7 +125,7 @@ h1,
 .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: Pluto TV Sans V10;
+  font-family: Google Sans;
   font-weight: 700;
   line-height: 1.25;
   color: #24292d;
@@ -22678,4 +22679,8 @@ nav {
   width: 345px;
   text-align: center;
 }
-
+@media (max-width: 550px) {
+  .hero-left {
+    margin-bottom: 240px !important;
+  }
+}

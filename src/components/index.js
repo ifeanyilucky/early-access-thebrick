@@ -8,22 +8,24 @@ const HomePage = () => {
     <>
       <main>
         <section className="position-relative overflow-hidden pt-5 pt-lg-3">
-          <nav className="navbar bg-transparent container">
-            <a className="navbar-brand" href="/">
-              <img
-                src="/assets/images/thebrick.png"
-                width="70%"
-                alt="thebrick logo"
-              />
-            </a>
-            <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                <a className="nav-link" href="#early-access">
-                  <button className="btn btn-primary">Early Access</button>
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <div className="container">
+            <nav className="navbar bg-transparent">
+              <a className="navbar-brand" href="/">
+                <img
+                  src="/assets/images/thebrick.png"
+                  width="70%"
+                  alt="thebrick logo"
+                />
+              </a>
+              <ul className="navbar-nav mr-auto">
+                <li className="nav-item active">
+                  <a className="nav-link" href="#early-access">
+                    <button className="btn btn-primary">Early Access</button>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
           <figure className="position-absolute top-50 start-0 translate-middle-y ms-n7 d-none d-xxl-block">
             <svg className="rotate-74 fill-danger opacity-1">
               <circle cx="180.4" cy="15.5" r="7.7" />
@@ -171,7 +173,7 @@ const HomePage = () => {
 
           <div className="container">
             <div className="row align-items-center g-5">
-              <div className="col-lg-5 col-xl-6 position-relative z-index-1 text-center text-lg-start mb-5 mb-sm-0">
+              <div className="hero-left col-lg-5 col-xl-6 position-relative z-index-1 text-center text-lg-start mb-5 mb-sm-0">
                 <figure className="fill-warning position-absolute bottom-0 end-0 me-5 d-none d-xl-block">
                   <svg width="42px" height="42px">
                     <path d="M21.000,-0.001 L28.424,13.575 L41.999,20.999 L28.424,28.424 L21.000,41.998 L13.575,28.424 L-0.000,20.999 L13.575,13.575 L21.000,-0.001 Z" />
