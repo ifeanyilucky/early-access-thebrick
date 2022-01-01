@@ -245,7 +245,6 @@ const HomePage = () => {
                     height="538px"
                     viewBox="0 0 554 544"
                     style={{ enableBackground: "new 0 0 554 544" }}
-                    throwIfNamespace={false}
                   >
                     <path
                       className="fill-primary"
@@ -380,7 +379,7 @@ const HomePage = () => {
                   <div className="col-7 mt-0 mt-xl-5 text-end position-relative z-index-1 d-none d-md-block">
                     <figure className="fill-danger position-absolute top-0 start-50 mt-n7 ms-6 ps-3 pt-2 z-index-n1 d-none d-lg-block">
                       <svg
-                        enable-background="new 0 0 160.7 159.8"
+                        enableBackground="new 0 0 160.7 159.8"
                         height="180px"
                       >
                         <path d="m153.2 114.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2-0.1-1.2 0.9-2.2 2.1-2.2z" />
