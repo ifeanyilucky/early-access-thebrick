@@ -7,7 +7,7 @@ const signUpSchema = Yup.object().shape({
 });
 
 const EarlyAccess = () => {
-  const handleSubmit = async (values) => {
+  const handleSubmit = async (values, { resetForm }) => {
     console.log(values);
     const { email } = values;
     try {
@@ -16,58 +16,57 @@ const EarlyAccess = () => {
       };
       await axios.post("/.netlify/functions/newsLetterSubscribe", payload);
       alert("Contact details were successfully added");
+      resetForm();
     } catch (error) {
       alert(error.message);
     }
   };
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
+    <Formik
+      initialValues={{ email: "" }}
+      onSubmit={handleSubmit}
+      validationSchema={signUpSchema}
     >
-      <Formik
-        initialValues={{ email: "" }}
-        onSubmit={handleSubmit}
-        validationSchema={signUpSchema}
-      >
-        {(formik) => (
-          <Form>
-            <div className="subscribe">
-              <h2 className="fs-1">Join The Waitlist</h2>
-              <p className="subscribe__copy">
-                Be the first set of people to use Thebrick
-              </p>
+      {(formik) => (
+        <Form
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <div className="subscribe">
+            <h2 className="fs-1">Join The Waitlist</h2>
+            <p className="subscribe__copy">
+              Be the first set of people to use Thebrick
+            </p>
 
-              <ErrorMessage
+            <ErrorMessage
+              name="email"
+              component="div"
+              className="mb-2 text-danger"
+            />
+
+            <div className="form">
+              <Field
                 name="email"
-                component="div"
-                className="mb-2 text-danger"
+                type="email"
+                className="form__email"
+                placeholder="Enter your email address"
               />
 
-              <div className="form">
-                <Field
-                  name="email"
-                  type="email"
-                  className="form__email"
-                  placeholder="Enter your email address"
-                />
-
-                <button
-                  className="form__button"
-                  type="submit"
-                  disabled={!formik.isValid || !formik.dirty}
-                >
-                  Request Access
-                </button>
-              </div>
+              <button
+                className="form__button"
+                type="submit"
+                disabled={!formik.isValid || !formik.dirty}
+              >
+                Request Access
+              </button>
             </div>
-          </Form>
-        )}
-      </Formik>
-    </div>
+          </div>
+        </Form>
+      )}
+    </Formik>
   );
 };
 

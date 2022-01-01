@@ -1,8 +1,8 @@
 import axios from "axios";
-
-exports.handler = async (event, context) => {
-  const listId = `7cd859ad95`;
-  const apiKey = `46b72f347ce859b9db6b0b367b0c66af-us20`;
+require("dotenv").config();
+const handler = async (event, context) => {
+  const listId = process.env.LIST_ID;
+  const apiKey = process.env.API_KEY;
   const body = JSON.parse(event.body);
   const { email_address } = body;
   if (!email_address) {
@@ -22,6 +22,7 @@ exports.handler = async (event, context) => {
       {
         headers: {
           Authorization: `Basic ${apiKey}`,
+          "Content-Type": "application/json",
         },
       }
     );
@@ -38,3 +39,5 @@ exports.handler = async (event, context) => {
     };
   }
 };
+
+module.exports = { handler };

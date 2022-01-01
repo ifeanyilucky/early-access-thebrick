@@ -7,7 +7,10 @@ const HomePage = () => {
   return (
     <>
       <main>
-        <section className="position-relative overflow-hidden pt-5 pt-lg-3">
+        <section
+          className="position-relative overflow-hidden pt-lg-3"
+          style={{ paddingTop: "0" }}
+        >
           <div className="container">
             <nav className="navbar bg-transparent">
               <a className="navbar-brand" href="/">
