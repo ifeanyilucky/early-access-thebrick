@@ -267,7 +267,7 @@ const OurProduct = () => {
               <img
                 src="assets/images/element/agents.png"
                 className="rounded"
-                alt="agent-picture"
+                alt="agent2"
               />
             </div>
 
