@@ -9,8 +9,12 @@ const HomePage = () => {
       <main>
         <section className="position-relative overflow-hidden pt-5 pt-lg-3">
           <nav className="navbar bg-transparent container">
-            <a className="navbar-brand" href="#">
-              <img src="/assets/images/thebrick.png" width="70%" />
+            <a className="navbar-brand" href="/">
+              <img
+                src="/assets/images/thebrick.png"
+                width="70%"
+                alt="thebrick logo"
+              />
             </a>
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
@@ -430,7 +434,7 @@ const HomePage = () => {
                     <img
                       src="assets/images/element/agent2.png"
                       className="rounded"
-                      alt="agent-picture"
+                      alt="agent"
                     />
                   </div>
                 </div>
@@ -459,7 +463,7 @@ const HomePage = () => {
             <div className="container px-0">
               <div className="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left">
                 <div className="text-primary-hover">
-                  <a href="#" className="text-body">
+                  <a href="/" className="text-body">
                     &copy; {date.getFullYear()} Thebrick Realty Services
                     Limited.{" "}
                   </a>
@@ -475,7 +479,7 @@ const HomePage = () => {
                             {" "}
                             <a
                               className="btn btn-white btn-sm shadow px-2 text-facebook"
-                              href="#"
+                              href="/"
                             >
                               <i className="fab fa-fw fa-facebook-f"></i>
                             </a>{" "}
@@ -493,19 +497,10 @@ const HomePage = () => {
                             {" "}
                             <a
                               className="btn btn-white btn-sm shadow px-2 text-twitter"
-                              href="#"
+                              href="https://www.twitter.com/thebrickng"
                             >
                               <i className="fab fa-fw fa-twitter"></i>
-                            </a>{" "}
-                          </li>
-                          <li className="list-inline-item">
-                            {" "}
-                            <a
-                              className="btn btn-white btn-sm shadow px-2 text-linkedin"
-                              href=""
-                            >
-                              <i className="fab fa-fw fa-linkedin-in"></i>
-                            </a>{" "}
+                            </a>
                           </li>
                         </ul>
                       </div>
