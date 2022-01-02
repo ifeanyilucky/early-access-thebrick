@@ -8,8 +8,6 @@ const signUpSchema = Yup.object().shape({
 
 const EarlyAccess = () => {
   const handleSubmit = (values, { resetForm }) => {
-    console.log(values);
-    // const { email } = values;
     axios
       .post("https://sheetdb.io/api/v1/mp0ufj6hw8ywg", { data: values })
       .then((res) => {
