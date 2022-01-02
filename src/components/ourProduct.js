@@ -275,25 +275,25 @@ const OurProduct = () => {
               <h4 className="mb-3">Our Product</h4>
 
               <p>
-                If you are looking to invest in real estate property in Nigeria,
-                look no further than Thebrick Realty. With our industry-leading
-                database of high-quality and updated hostel properties and
-                renters, you’ll have the ability to find or rent out hostels
-                without the hassle of having to find leads.
+                Look no further than Thebrick Realty if you want to start a
+                hostel property agency at a university. With our
+                industry-leading database of high-quality and updated hostel
+                properties and renters, you’ll have the ability to find or rent
+                out hostels without the hassle of having to find leads.
               </p>
               <p>
-                Are you looking to sell? Take advantage of Thebrick Realty to
-                market your property using social media, SEO & SEM marketing,
-                and other online avenues. We make sure that your property is
-                seen by leading investors and buyers who are ready to compete
-                for your property.
+                Are you looking to rent out your hostel properties? Take
+                advantage of Thebrick Realty to market your properties using our
+                social media, SEO and SEM marketing, and other online avenues.
+                We make sure that your hostel properties are seen by students
+                who are ready to rent them.
               </p>
               <p>
-                Wanting to buy a new property? With our database of
-                constantly-updating real estate, you can quickly search, browse,
-                and act on the property that meets your needs. Quit searching
-                endlessly across multiple sources, and find everything you need
-                in one place!
+                Want to rent a new hostel? With our database of
+                constantly-updating properties, you can quickly search, browse,
+                and act on the hostel that meets your needs. Put an end to
+                endlessly searching across multiple sources and find everything
+                you need in one place!
               </p>
             </div>
           </div>
