@@ -44,7 +44,7 @@ const EarlyAccess = () => {
           }}
         >
           <div className="subscribe">
-            <h2 className="fs-1">Join The Waitlist</h2>
+            <h2 className="fs-1">Join The Waitlist 👋</h2>
             <p className="subscribe__copy">
               Be the first set of people to use Thebrick
             </p>
