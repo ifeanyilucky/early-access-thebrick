@@ -7,19 +7,27 @@ const signUpSchema = Yup.object().shape({
 });
 
 const EarlyAccess = () => {
-  const handleSubmit = async (values, { resetForm }) => {
+  const handleSubmit = (values, { resetForm }) => {
     console.log(values);
-    const { email } = values;
-    try {
-      const payload = {
-        email_address: email,
-      };
-      await axios.post("/.netlify/functions/newsLetterSubscribe", payload);
-      alert("Contact details were successfully added");
-      resetForm();
-    } catch (error) {
-      alert(error.message);
-    }
+    // const { email } = values;
+    axios
+      .post("https://sheetdb.io/api/v1/mp0ufj6hw8ywg", { data: values })
+      .then((res) => {
+        alert(`${values.email} was added successfully`);
+        resetForm();
+      })
+      .catch((error) => alert(error));
+
+    // try {
+    //   const payload = {
+    //     email_address: email,
+    //   };
+    //   await axios.post("/.netlify/functions/newsLetterSubscribe", payload);
+    //   alert("Contact details were successfully added");
+    //   resetForm();
+    // } catch (error) {
+    //   alert(error.message);
+    // }
   };
   return (
     <Formik
